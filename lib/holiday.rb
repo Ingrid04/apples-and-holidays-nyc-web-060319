@@ -65,7 +65,14 @@ def all_holidays_with_bbq(holiday_hash)
 
 end
 
-
+   
+  holiday_hash.each do |season, holiday|
+    if season == :winter
+      holiday.each do |name, supplies|
+        supplies << supply
+      end
+    end
+  end
 
 
 
