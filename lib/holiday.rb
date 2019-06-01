@@ -83,15 +83,5 @@ end
 result
 end
 
-result = []
-  holiday_hash.each do |seasons, seasons_data|
-    seasons_data.each do |holiday, holiday_data|
-      if holiday_data.include?('BBQ')
-        result << seasons.to_sym
-      end
-  end
-end
-result
-end
 
 all_holidays_with_bbq(holiday_supplies)
